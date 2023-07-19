@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Decorations</title>
+    <style>
+        /*hoover , is called the pseudo classes.*/
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            color: red;
+            text-decoration: underline;
+        }
+        /*by deafult in our browser,if link is not visited,than it is blue in colour,after visited it becomes purple colour. */
+        a:visited{
+            color: rgb(166, 230, 28);/*if links is visited than colour is brown */
+        }
+
+    </style>
+</head>
+<body>
+   <p> <a class="google" href="https://google.com">Google</a></p>
+   <p><a href="http://wikipedia.com">wikipedia</a></p>
+</body>
+</html>

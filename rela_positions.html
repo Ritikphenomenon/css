@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIV</title>
+    <style>
+        #first-section{
+          color: green;
+          background-color:lightgreen;
+          width: 200px;
+           position: relative;
+           left: 10px;/*it moves right sides from original positions*/
+           top: 50px;/*it moves downward direction from the original positions*/
+           z-index: 1;
+           /*the sections which has more z-index value will appear first in case of overlapping*/
+
+        }
+        #second-section{
+            background-color:blue ;
+            width: 200px;
+            position: relative;
+            z-index: 4;
+            opacity: 0.5;
+            /*it marks the visibility , it ranges from 0 to 1, 0-invisible,0.5-transparent,1-opaque*/
+        }
+        .clear{
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div id="first-section">
+    <h1>css is cool</h1>
+    <p>i am learning css</p>
+</div>
+<div id="second-section">
+    <p>css is fun</p>
+    <p>This is some random text</p>
+</div>
+<p class="clear">This is not floated</p>
+</body>
+</html>

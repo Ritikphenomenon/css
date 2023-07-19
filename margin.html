@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIV</title>
+    <style>
+        /* different between margin and positioning ,margin-when we want , element dont go out of flow.
+        positioning-when we want,element goes out of flow pages*/
+        #first-section{
+          color: green;
+          background-color:lightgreen;
+          width: 200px;
+        /*margin:it helps to move element top bottom left and right*/
+        margin: 100px;/*100 px spaces is added to all four sides*/
+        margin: 200px 300px;/*first-top and bottom , second-left and right*/
+        margin: 100px 200px 300px 400px;/*it is given to top,right,bottom,left*/
+        margin-left: 10px;/*it create to left side*/
+
+           
+        }
+        #second-section{
+            background-color:blue ;
+            width: 200px;
+        }
+        .clear{
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div id="first-section">
+    <h1>css is cool</h1>
+    <p>i am learning css</p>
+</div>
+<div id="second-section">
+    <p>css is fun</p>
+    <p>This is some random text</p>
+</div>
+<p class="clear">This is not floated</p>
+</body>
+</html>
